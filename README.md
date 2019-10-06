@@ -1,4 +1,4 @@
-# `highlight.js` syntax definition for robots.txt
+# `robots.txt` - a language definition for highlight.js
 
 For more about highlight.js, see https://highlightjs.org/
 
