@@ -8,7 +8,7 @@ Category: config
 var module = module ? module : {};     // shim for browser use
 
 function hljsDefineRobotsTxt(hljs) {
-  var HASH_COMMENT_MODE = hljs.COMMENT('(?:^|\\s+)#', '$');
+  var HASH_COMMENT_MODE = hljs.COMMENT('#', '$');
   return {
     aliases: ['robotstxt', 'robots.txt'],
     case_insensitive: true,
@@ -24,7 +24,7 @@ function hljsDefineRobotsTxt(hljs) {
       {
         className: 'string',
         begin: '^\\s*(?:user-agent|(?:dis)?allow)\\s*:\\s*',
-        end: '$',
+        end: /$/,
         excludeBegin: true,
         relevance: 10,
         contains: [
@@ -34,7 +34,7 @@ function hljsDefineRobotsTxt(hljs) {
       {
         className: 'string',
         begin: '^\\s*sitemap\\s*:\\s*',
-        end: '$',
+        end: /$/,
         excludeBegin: true,
         contains: [
           HASH_COMMENT_MODE
