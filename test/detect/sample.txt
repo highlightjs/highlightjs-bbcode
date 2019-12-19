@@ -1,0 +1,14 @@
+User-agent: *
+Disallow: /search
+Allow: /search/about
+
+# AdsBot
+User-agent: AdsBot-Google
+Disallow: /maps/api/js/
+Allow: /maps/api/js
+
+# Just another comment
+User-agent: Twitterbot
+Allow: /imgres
+
+Sitemap: https://www.google.com/sitemap.xml
