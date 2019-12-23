@@ -20,6 +20,14 @@ Simply load the module after loading Highlight.js.  You'll use the minified vers
 </script>
 ```
 
+### Using directly from the UNPKG CDN
+
+```html
+<script type="text/javascript"
+  src="https://unpkg.com/highlightjs-robots-txt@0.9.1/dist/robots-txt.min.js"></script>
+```
+
+- More info: <https://unpkg.com>
 
 ### With Node or another build system
 
