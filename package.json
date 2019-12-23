@@ -1,6 +1,6 @@
 {
   "name": "highlightjs-robots-txt",
-  "version": "0.9",
+  "version": "0.9.0",
   "description": "highlight.js syntax definition for Google's robot.txt format",
   "main": "src/robots-txt.js",
   "scripts": {
