@@ -2,7 +2,7 @@
   "name": "highlightjs-robots-txt",
   "version": "0.9",
   "description": "highlight.js syntax definition for Google's robot.txt format",
-  "main": "robots-txt.js",
+  "main": "src/robots-txt.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
