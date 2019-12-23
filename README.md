@@ -5,7 +5,7 @@
 
 ## Usage
 
-Simply include the `highlight.js` library in your webpage or Node app, then load this module.
+Simply include the Highlight.js library in your webpage or Node app, then load this module.
 
 ### Static website or simple usage
 
@@ -13,7 +13,8 @@ Simply load the module after loading Highlight.js.  You'll use the minified vers
 
 ```html
 <script type="text/javascript" src="/path/to/highlight.min.js"></script>
-<script type="text/javascript" charset="UTF-8" src="/path/to/highlightjs-robots-txt/dist/robots-txt.min.js"></script>
+<script type="text/javascript" charset="UTF-8"
+  src="/path/to/highlightjs-robots-txt/dist/robots-txt.min.js"></script>
 <script type="text/javascript">
   hljs.initHighlightingOnLoad();
 </script>
@@ -28,7 +29,7 @@ If you're using Node / Webpack / Rollup / Browserify, etc, simply require the la
 var hljs = require('highlightjs');
 var hljsRobotsTxt = require('highlightjs-robots-txt');
 
-hljs.registerLanguage("robots-txt", hljsRobotsTxt)
+hljs.registerLanguage("robots-txt", hljsRobotsTxt);
 hljs.initHighlightingOnLoad();
 ```
 
