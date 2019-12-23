@@ -1,6 +1,6 @@
 # robots.txt - a language grammar for highlight.js
 
-![install size](https://badgen.net/packagephobia/install/highlightjs-robots-txt) ![minified size](https://badgen.net/bundlephobia/min/highlightjs-robots-txt)
+![version](https://badgen.net/npm/v/highlightjs-robots-txt) ![install size](https://badgen.net/packagephobia/install/highlightjs-robots-txt) ![minified size](https://badgen.net/bundlephobia/min/highlightjs-robots-txt)
 
 ## Usage
 
