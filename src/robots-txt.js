@@ -5,9 +5,7 @@ Description: language definition for robots.txt files
 Category: config
 */
 
-var module = module ? module : {};     // shim for browser use
-
-function hljsDefineRobotsTxt(hljs) {
+module.exports = function (hljs) {
   var HASH_COMMENT_MODE = hljs.COMMENT('#', '$');
   return {
     aliases: ['robotstxt', 'robots.txt'],
@@ -45,8 +43,4 @@ function hljsDefineRobotsTxt(hljs) {
   }
 }
 
-module.exports = function(hljs) {
-  hljs.registerLanguage('robots-txt', hljsDefineRobotsTxt);
-};
 
-module.exports.definer = hljsDefineRobotsTxt;

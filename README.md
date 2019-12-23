@@ -1,37 +1,41 @@
-# `robots.txt` - a language definition for highlight.js
+# robots.txt - a language grammar for highlight.js
 
-For more about highlight.js, see https://highlightjs.org/
+![install size](https://badgen.net/packagephobia/install/highlightjs-robots-txt) ![minified size](https://badgen.net/bundlephobia/min/highlightjs-robots-txt)
 
-For more about robots.txt, see https://support.google.com/webmasters/answer/6062608?hl=en
+## Usage
 
-### Usage
+Simply include the `highlight.js` library in your webpage or Node app, then load this module.
 
-Simply include the `highlight.js` script package in your webpage or node app, load up this module and apply it to `hljs`.
+### Static website or simple usage
 
-If you're not using a build system and just want to embed this in your webpage:
+Simply load the module after loading Highlight.js.  You'll use the minified version found in the `dist` directory.  This module is just a CDN build of the language, so it will register itself as the Javascript is loaded.
 
 ```html
-<script type="text/javascript" src="/path/to/highlight.pack.js"></script>
-<script type="text/javascript" src="/path/to/highlightjs-robots-txt/robots-txt.js"></script>
+<script type="text/javascript" src="/path/to/highlight.min.js"></script>
+<script type="text/javascript" charset="UTF-8" src="/path/to/highlightjs-robots-txt/dist/robots-txt.min.js"></script>
 <script type="text/javascript">
-    hljs.registerLanguage('robots-txt', hljsDefineRobotsTxt);
-    hljs.initHighlightingOnLoad();
+  hljs.initHighlightingOnLoad();
 </script>
 ```
 
-If you're using webpack / rollup / browserify / node:
+
+### With Node or another build system
+
+If you're using Node / Webpack / Rollup / Browserify, etc, simply require the language module, then register it with Highlight.js.
 
 ```javascript
 var hljs = require('highlightjs');
-var hljsDefineRobotsTxt = require('highlightjs-robots-txt');
+var hljsRobotsTxt = require('highlightjs-robots-txt');
 
-hljsDefineRobotsTxt(hljs);
+hljs.registerLanguage("robots-txt", hljsRobotsTxt)
 hljs.initHighlightingOnLoad();
 ```
 
-### Advanced
 
-This is a pretty simple package, the only thing you might want to do differently is name the language something other than `robots-txt`. If you want to do this, simply `import { definer } from 'highlightjs-robots-txt';` and use it like: `hljs.registerLanguage('othername', definer);`.
+## License
+
+Highlight.js is released under the MIT License. See [LICENSE][1] file
+for details.
 
 ### Author
 
@@ -42,3 +46,10 @@ Thomas LÉVEIL <thomasleveil@gmail.com>
 Josh Goebel <hello@joshgoebel.com>
 
 
+## Links
+
+- The official site for the Highlight.js library is <https://highlightjs.org/>.
+- The Highlight.js GitHub project: <https://github.com/highlightjs/highlight.js>
+- Learn more about robots.txt: <https://support.google.com/webmasters/answer/6062608?hl=en>
+
+[1]: https://github.com/highlightjs/highlightjs-robots-txt/blob/master/LICENSE
