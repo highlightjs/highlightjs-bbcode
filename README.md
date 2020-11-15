@@ -1,7 +1,4 @@
-# robots.txt - a language grammar for highlight.js
-
-![version](https://badgen.net/npm/v/highlightjs-robots-txt) ![license](https://badgen.net/badge/license/MIT/blue)
-![install size](https://badgen.net/packagephobia/install/highlightjs-robots-txt) ![minified size](https://badgen.net/bundlephobia/min/highlightjs-robots-txt)
+# bbcode - a language grammar for highlight.js
 
 ## Usage
 
@@ -20,25 +17,10 @@ Simply load the module after loading Highlight.js.  You'll use the minified vers
 </script>
 ```
 
-### Using directly from the UNPKG CDN
+### Using directly from the jsDelivr CDN
 
 ```html
-<script type="text/javascript"
-  src="https://unpkg.com/highlightjs-robots-txt@0.9.1/dist/robots-txt.min.js"></script>
-```
-
-- More info: <https://unpkg.com>
-
-### With Node or another build system
-
-If you're using Node / Webpack / Rollup / Browserify, etc, simply require the language module, then register it with Highlight.js.
-
-```javascript
-var hljs = require('highlightjs');
-var hljsRobotsTxt = require('highlightjs-robots-txt');
-
-hljs.registerLanguage("robots-txt", hljsRobotsTxt);
-hljs.initHighlightingOnLoad();
+<script src="https://cdn.jsdelivr.net/gh/RedGuy12/highlightjs-bbcode/src/bbcode.min.js"></script>
 ```
 
 
@@ -49,17 +31,12 @@ for details.
 
 ### Author
 
-Thomas LÉVEIL <thomasleveil@gmail.com>
-
-### Maintainer
-
-Josh Goebel <hello@joshgoebel.com>
-
+Paul Reid <paul@reid-family.org>
 
 ## Links
 
 - The official site for the Highlight.js library is <https://highlightjs.org/>.
 - The Highlight.js GitHub project: <https://github.com/highlightjs/highlight.js>
-- Learn more about robots.txt: <https://support.google.com/webmasters/answer/6062608?hl=en>
+- Learn more about bbcode: <https://www.bbcode.org>
 
-[1]: https://github.com/highlightjs/highlightjs-robots-txt/blob/master/LICENSE
+[1]: https://github.com/RedGuy12/highlightjs-bbcode/blob/master/LICENSE
