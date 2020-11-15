@@ -1,25 +1,25 @@
 {
-  "name": "highlightjs-robots-txt",
-  "version": "0.9.1",
-  "description": "highlight.js syntax definition for Google's robot.txt format",
-  "main": "src/robots-txt.js",
+  "name": "highlightjs-bbcode",
+  "version": "0.9",
+  "description": "Highlight.JS syntax definition for BBCode format",
+  "main": "src/bbcode.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/highlightjs/highlightjs-robots-txt.git"
+    "url": "https://github.com/RedGuy12/highlightjs-bbcode.git"
   },
   "keywords": [
-    "robots.txt",
+    "bbcode",
     "highlight.js",
     "highlightjs",
     "syntax"
   ],
-  "author": "Thomas LÉVEIL <thomasleveil@gmail.com>",
+  "author": "Paul Reid <paul@reid-family.org>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/highlightjs/highlightjs-robots-txt/issues"
+    "url": "https://github.com/RedGuy12/highlightjs-bbcode/issues"
   },
-  "homepage": "https://github.com/highlightjs/highlightjs-robots-txt"
+  "homepage": "https://github.com/RedGuy12/highlightjs-bbcode"
 }
