@@ -1,46 +1,38 @@
 /*
-Language: robots.txt
-Author: Thomas LÉVEIL <thomasleveil@gmail.com>
-Description: language definition for robots.txt files
+Language: bbcode
+Author: Paul Reid <paul@reid-family.org>
+Description: highlightjs language definition for bbcode files
 Category: config
 */
 
-module.exports = function (hljs) {
-  var HASH_COMMENT_MODE = hljs.COMMENT('#', '$');
-  return {
-    aliases: ['robotstxt', 'robots.txt'],
-    case_insensitive: true,
-    lexemes: '[a-z-]+',
-    keywords: {
-      section: 'user-agent',
-      built_in: 'allow disallow',
-      keyword: 'crawl-delay sitemap'
-    },
-    contains: [
-      HASH_COMMENT_MODE,
-      hljs.NUMBER_MODE,
-      {
-        className: 'string',
-        begin: '^\\s*(?:user-agent|(?:dis)?allow)\\s*:\\s*',
-        end: /$/,
-        excludeBegin: true,
-        relevance: 10,
+hljs.registerLanguage('bbcode', function (hljs) {
+    return {
+        case_insensitive: true,
         contains: [
-          HASH_COMMENT_MODE
+            {
+                className: 'name',
+                begin: /\[[^=\s\]]*/
+            },
+            {
+                className: 'name',
+                begin: ']'
+            },
+            {
+              className: 'attribute',
+              begin: /(?<==)[^\]\s]*/
+            },
+            {
+                className: 'attr',
+                begin: /(?<=\[[^\]]* )[^\s=\]]*/
+            },
+            {
+                className: 'string',
+                begin: /[=;:8]'?\-?[\)\(3SPDO>@$|/]/
+            },
+            {
+                className: 'string',
+                begin: /:[\w]*:/
+            }
         ]
-      },
-      {
-        className: 'string',
-        begin: '^\\s*sitemap\\s*:\\s*',
-        end: /$/,
-        excludeBegin: true,
-        contains: [
-          HASH_COMMENT_MODE
-        ]
-      }
-    ],
-    illegal: '<(?:!DOCTYPE\\s+)?html>'
-  }
-}
-
-
+    };
+});
