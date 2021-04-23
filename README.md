@@ -1,4 +1,11 @@
+![](https://badgen.net/badge/status/seeking%20maintainer/orange)
+
+This project is currently unmaintained and could use a new maintainer.  If interested, please open an issue.
+
+---
+
 # bbcode - a language grammar for highlight.js
+
 
 ## Usage
 
@@ -28,8 +35,7 @@ Simply load the module after loading Highlight.js.  The file you want is `bbcode
 
 ## License
 
-Highlight.js is released under the MIT License. See [LICENSE][1] file
-for details.
+Released under the MIT License. See [LICENSE][1] file for details.
 
 ### Author
 
