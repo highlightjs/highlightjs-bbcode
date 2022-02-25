@@ -20,7 +20,7 @@ Simply load the module after loading Highlight.js.  The file you want is `bbcode
 <script src="/path/to/highlight.min.js"></script>
 <script src="/path/to/highlightjs-bbcode/bbcode.js"></script>
 <script type="text/javascript">
-  hljs.initHighlightingOnLoad();
+  hljs.highlightAll();
 </script>
 ```
 
